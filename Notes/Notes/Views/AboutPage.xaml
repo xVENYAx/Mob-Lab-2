@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.AboutPage"
+             Title="Інформація">
+    <!-- Layout children in two rows -->
+    
+    <Grid RowDefinitions="Auto,*">
+        <Image Source="https://st3.depositphotos.com/1031174/12522/i/600/depositphotos_125225762-stock-photo-clouds-in-sky.jpg"
+               HeightRequest="210" ScaleY="1"/>
+        <!-- Layout children vertically -->
+        <StackLayout Grid.Row="1"
+                     Margin="20"
+                     Spacing="20">
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Нотатник, версія 1.0"
+                                  TextColor="gold"
+                                  FontAttributes="Bold"
+                                  FontSize="22" />
+                            
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="Цю програму зробив студент 1 курсу, з університета НАУ."
+                   TextColor="Blue"/>
+            <Label Text="Виконав xVENYAx" TextColor="Green" VerticalOptions="End" HorizontalOptions="End"/>
+            <Label Text="Якщо ви хочете перглянути більше робіт, то переходіть по посиланню тут.  |   |  |  |  |  |   |  | |   
+              .                                     \/\/\/\/\/\/\/\/" TextColor="HotPink"/>
+            
+            <Button Text="Подивитися сторінку."
+                    BackgroundColor="Aquamarine"
+                    TextColor="BurlyWood"
+                    Clicked="OnButtonClicked" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
