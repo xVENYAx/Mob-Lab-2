@@ -16,7 +16,7 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <FormattedString.Spans>
-                            <Span Text="Нотатник, версія 1.0"
+                            <Span Text="Нотатник, версія 2.0"
                                   TextColor="gold"
                                   FontAttributes="Bold"
                                   FontSize="22" />
